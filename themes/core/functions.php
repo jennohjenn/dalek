@@ -1,16 +1,21 @@
 <?php
 /**
-* Helpers for the template file.
-*/
+ * Helpers for the template file.
+ */
 
 /**
-* Add static entries in the template file.
-*/
-$da->data['header'] = '<h1>Header: Dalek</h1>';
+ * Add static entries for use in the template file. 
+ */
+$da->data['header'] = 'Dalek';
+$da->data['slogan'] = 'A PHP-based MVC-inspired CMF';
+$da->data['favicon']      = theme_url('logo_80x80.png');
+$da->data['logo']         = theme_url('logo_80x80.png');
+$da->data['logo_width']   = 80;
+$da->data['logo_height']  = 80;
 $da->data['footer'] = <<<EOD
-<p>Footer: &copy; Dalek by Erika Gidlund (jennelie.1981@gmail.com)</p>
+<p>Dalek &copy; by Erika Gidlund (jennelie.1981@gmail.com)</p>
 
-<p>Tools:
+<p>Tools: 
 <a href="http://validator.w3.org/check/referer">html5</a>
 <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">css3</a>
 <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css21">css21</a>
@@ -36,5 +41,4 @@ $da->data['footer'] = <<<EOD
 </p>
 
 EOD;
-
 
