@@ -17,7 +17,7 @@ function get_debug() {
   if(isset($da->config['debug']['db-queries']) && $da->config['debug']['db-queries'] && isset($da->db)) {
     $html .= "<p>Database made the following queries.</p><pre>" . implode('<br/><br/>', $da->db->GetQueries()) . "</pre>";
   }    
-  if(isset($da->config['debug']['lydia']) && $da->config['debug']['lydia']) {
+  if(isset($da->config['debug']['dalek']) && $da->config['debug']['dalek']) {
     $html .= "<hr><h3>Debuginformation</h3><p>The content of CDalek:</p><pre>" . htmlent(print_r($da, true)) . "</pre>";
   }    
   return $html;
