@@ -27,8 +27,16 @@ function get_debug() {
 /**
  * Prepend the base_url.
  */
-function base_url($url) {
+function base_url($url=null) {
   return CDalek::Instance()->request->base_url . trim($url, '/');
+}
+
+
+/**
+ * Create a url to an internal resource.
+ */
+function create_url($url=null) {
+  return CDalek::Instance()->request->CreateUrl($url);
 }
 
 
@@ -46,4 +54,12 @@ function theme_url($url) {
  */
 function current_url() {
   return CDalek::Instance()->request->current_url;
+}
+
+
+/**
+ * Render all views.
+ */
+function render_views() {
+  return CDalek::Instance()->views->Render();
 }

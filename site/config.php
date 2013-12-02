@@ -14,7 +14,7 @@ ini_set('display_errors', 1);
 /**
  * Set what to show as debug or developer information in the get_debug() theme helper.
  */
-$da->config['debug']['lydia'] = false;
+$da->config['debug']['dalek'] = false;
 $da->config['debug']['db-num-queries'] = true;
 $da->config['debug']['db-queries'] = true;
 

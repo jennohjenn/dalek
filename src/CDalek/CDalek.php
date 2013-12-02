@@ -35,12 +35,15 @@ class CDalek implements ISingleton {
 		if(isset($this->config['database'][0]['dsn'])) {
   		$this->db = new CMDatabase($this->config['database'][0]['dsn']);
   	}
+  	
+  	// Create a container for all views and theme data
+  	$this->views = new CViewContainer();
   }
   
   
   /**
 	 * Singleton pattern. Get the instance of the latest created object or create a new one. 
-	 * @return CDalek The instance of this class.
+	 * @return CLydia The instance of this class.
 	 */
 	public static function Instance() {
 		if(self::$instance == null) {
@@ -103,6 +106,11 @@ class CDalek implements ISingleton {
 	 * ThemeEngineRender, renders the reply of the request to HTML or whatever.
 	 */
   public function ThemeEngineRender() {
+    // Is theme enabled?
+    if(!isset($this->config['theme'])) {
+      return;
+    }
+    
     // Get the paths and settings for the theme
     $themeName 	= $this->config['theme']['name'];
     $themePath 	= DALEK_INSTALL_PATH . "/themes/{$themeName}";
@@ -121,6 +129,7 @@ class CDalek implements ISingleton {
 
     // Extract $da->data to own variables and handover to the template file
     extract($this->data);      
+    extract($this->views->GetData());      
     include("{$themePath}/default.tpl.php");
   }
 
