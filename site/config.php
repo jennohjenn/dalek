@@ -15,6 +15,8 @@ ini_set('display_errors', 1);
  * Set what to show as debug or developer information in the get_debug() theme helper.
  */
 $da->config['debug']['dalek'] = false;
+$da->config['debug']['session'] = false;
+$da->config['debug']['timer'] = true;
 $da->config['debug']['db-num-queries'] = true;
 $da->config['debug']['db-queries'] = true;
 
@@ -45,6 +47,7 @@ $da->config['base_url'] = null;
  * Define session name
  */
 $da->config['session_name'] = preg_replace('/[:\.\/-_]/', '', $_SERVER["SERVER_NAME"]);
+$da->config['session_key']  = 'dalek';
 
 
 /**
@@ -71,7 +74,7 @@ $da->config['language'] = 'en';
  * The array-key is matched against the url, for example: 
  * the url 'developer/dump' would instantiate the controller with the key "developer", that is 
  * CCDeveloper and call the method "dump" in that class. This process is managed in:
- * $da->FrontControllerRoute();
+ * 4da->FrontControllerRoute();
  * which is called in the frontcontroller phase from index.php.
  */
 $da->config['controllers'] = array(
