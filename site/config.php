@@ -12,15 +12,17 @@ ini_set('display_errors', 1);
 
 
 /**
- * Set database(s).
+ * Set what to show as debug or developer information in the get_debug() theme helper.
  */
-$da->config['database'][0]['dsn'] = 'sqlite:' . DALEK_SITE_PATH . '/data/.ht.sqlite';
+$da->config['debug']['lydia'] = false;
+$da->config['debug']['db-num-queries'] = true;
+$da->config['debug']['db-queries'] = true;
 
 
 /**
- * Set what to show as debug or developer information in the get_debug() theme helper.
+ * Set database(s).
  */
-$da->config['debug']['display-dalek'] = false;
+$da->config['database'][0]['dsn'] = 'sqlite:' . DALEK_SITE_PATH . '/data/.ht.sqlite';
 
 
 /**

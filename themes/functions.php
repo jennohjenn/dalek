@@ -11,8 +11,14 @@
 function get_debug() {
   $da = CDalek::Instance();  
   $html = null;
-  if(isset($da->config['debug']['display-dalek']) && $da->config['debug']['display-dalek']) {
-    $html = "<hr><h3>Debuginformation</h3><p>The content of CDalek:</p><pre>" . htmlent(print_r($da, true)) . "</pre>";
+  if(isset($da->config['debug']['db-num-queries']) && $da->config['debug']['db-num-queries'] && isset($da->db)) {
+    $html .= "<p>Database made " . $da->db->GetNumQueries() . " queries.</p>";
+  }    
+  if(isset($da->config['debug']['db-queries']) && $da->config['debug']['db-queries'] && isset($da->db)) {
+    $html .= "<p>Database made the following queries.</p><pre>" . implode('<br/><br/>', $da->db->GetQueries()) . "</pre>";
+  }    
+  if(isset($da->config['debug']['lydia']) && $da->config['debug']['lydia']) {
+    $html .= "<hr><h3>Debuginformation</h3><p>The content of CDalek:</p><pre>" . htmlent(print_r($da, true)) . "</pre>";
   }    
   return $html;
 }

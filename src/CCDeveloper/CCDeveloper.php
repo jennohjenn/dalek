@@ -2,7 +2,7 @@
 /**
  * Controller for development and testing purpose, helpful methods for the developer.
  * 
- * @package LydiaCore
+ * @package DalekCore
  */
 class CCDeveloper extends CObject implements IController {
 
