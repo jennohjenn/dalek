@@ -1,8 +1,8 @@
-Lydia, the site directory
+Dalek, the site directory
 =========================
 
 Some people would call this the application directory, I call it the site directory. It should 
-contain the code to actually make a working website. When Lydia is deployed, and extended into a 
+contain the code to actually make a working website. When Dalek is deployed, and extended into a 
 website, then this directory should be the only place where content changes.
 
 The config.php
@@ -14,5 +14,5 @@ The src-directory
 -----------------
 
 The directory `src` contains classes for addon controllers, models and more. The autoloader looks here first
-for a class file, before it moves on to look in `LYDIA_INSTALL_PATH/src`. It is therefore possible
+for a class file, before it moves on to look in `DALEK_INSTALL_PATH/src`. It is therefore possible
 to replace core-classes with your own version, just use same classname and place it here.

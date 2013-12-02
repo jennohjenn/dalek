@@ -12,6 +12,12 @@ ini_set('display_errors', 1);
 
 
 /**
+ * Set database(s).
+ */
+$da->config['database'][0]['dsn'] = 'sqlite:' . DALEK_SITE_PATH . '/data/.ht.sqlite';
+
+
+/**
  * Set what to show as debug or developer information in the get_debug() theme helper.
  */
 $da->config['debug']['display-dalek'] = false;
@@ -26,25 +32,30 @@ $da->config['debug']['display-dalek'] = false;
  */
 $da->config['url_type'] = 1;
 
+
 /**
  * Set a base_url to use another than the default calculated
  */
 $da->config['base_url'] = null;
+
 
 /**
  * Define session name
  */
 $da->config['session_name'] = preg_replace('/[:\.\/-_]/', '', $_SERVER["SERVER_NAME"]);
 
+
 /**
  * Define server timezone
  */
 $da->config['timezone'] = 'Europe/Stockholm';
 
+
 /**
  * Define internal character encoding
  */
 $da->config['character_encoding'] = 'UTF-8';
+
 
 /**
  * Define language
