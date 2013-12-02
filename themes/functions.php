@@ -1,34 +1,36 @@
 <?php
 /**
- * Helpers for theming, available for all themes in their template files and functions.php.
- * This file is included right before the themes own functions.php
- */
+* Helpers for theming, available for all themes in their template files and functions.php.
+* This file is included right before the themes own functions.php
+*/
  
 
 /**
- * Print debuginformation from the framework.
- */
+* Print debuginformation from the framework.
+*/
 function get_debug() {
   $da = CDalek::Instance();
-  $html = "<h2>Debuginformation</h2><hr><p>The content of the config array:</p><pre>" . htmlentities(print_r($da->config, true)) . "</pre>";
-  $html .= "<hr><p>The content of the data array:</p><pre>" . htmlentities(print_r($da->data, true)) . "</pre>";
-  $html .= "<hr><p>The content of the request array:</p><pre>" . htmlentities(print_r($da->request, true)) . "</pre>";
+  $html = null;
+  if(isset($da->config['debug']['display-dalek'])) {
+    $html = "<hr><h3>Debuginformation</h3><p>The content of CDalek:</p><pre>" . htmlent(print_r($da, true)) . "</pre>";
+  }
   return $html;
 }
 
 
 /**
- * Prepend the base_url.
- */
+* Prepend the base_url.
+*/
 function base_url($url) {
-  return $da->request->base_url . trim($url, '/');
+  return CDalek::Instance()->request->base_url . trim($url, '/');
 }
 
 
 /**
- * Return the current url.
- */
+* Return the current url.
+*/
 function current_url() {
-  return $da->request->current_url;
+  return CDalek::Instance()->request->current_url;
 }
+
 

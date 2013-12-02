@@ -1,4 +1,4 @@
-This is the readmefile.
-=======================
+Dalek, a PHP-based, MVC-inspired CMF
+====================================
 
-Desctiption project so all can download it and install.
+

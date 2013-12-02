@@ -1,21 +1,21 @@
-/** 
- * Description: Core theme for Lydia
- */
+/**
+* Description: Core theme for Dalek
+*/
 
 /**
- * Structure
- */
+* Structure
+*/
 html{}
 body{
   background-color:#eee;
-  font: 1em Verdana, Arial, Helvetica, sans-serif;
+        font: 1em Verdana, Arial, Helvetica, sans-serif;
 }
 
 #header,
 #main,
 #footer {
   margin:0 auto;
-  width:970px;
+  width:960px;
   background-color:#fff;
   padding: 1em;
 }
