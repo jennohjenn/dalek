@@ -5,7 +5,7 @@
   <p>
     <label>Message: <br/>
     <textarea name='newEntry'></textarea></label>
-    <input type='text' name='email' id='emailH' />
+     <input type='text' name='email' id='emailH' />
   </p>
   <p>
     <input type='submit' name='doAdd' value='Add message' />

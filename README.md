@@ -18,6 +18,67 @@ Todo.
 * Yes, a lot of things to do.
 
 
+v0.2.10 (2012-03-29) 
+
+* Created a sequence to create a new user `user/create` using the web as userinterface.
+* Corrected: CreateUrl in CCobject did not return its result.
+
+
+v0.2.09 (2012-03-28) 
+
+* Added server-side form validation to `CForm`.
+
+
+v0.2.08 (2012-03-28) 
+
+* Changed name of database class from `CMDatabase` to `CDatabase`.
+* Added hashing techniques for storing password. plain, md5, sha1, md5salt, sha1salt.
+* Made sha1salt the default algorithm when storing passwords.
+
+
+v0.2.07 (2012-03-27) 
+
+* Integrated with gravatar.com and created theme function to get the gravatar link.
+
+
+v0.2.06 (2012-03-25) 
+
+* Added classes for CForm, `CFormElement`, `CFormElementText`, `CFormElementPassword`, `CFormElementSubmit`
+* Made `CForm` use `CFormElement` and both implements ArrayAccess.
+* User can save profile on user/profile.
+* `CMUser` uses implements ArrayAccess.
+
+
+v0.2.05 (2012-03-21) 
+
+* Corrected: Handling of incoming urls based on ?q=controller/metod and index.php/controller/metod.
+* Added utility class CForm for form handling.
+* Added login-form on user/login.
+
+
+v0.2.04 (2012-03-19) 
+
+* Used Reflection API to show the available controllers and methods using the index controller.
+
+
+v0.2.03 (2012-03-19) 
+
+* Made `CMUser` a part of `CLydia` and `CObject`.
+* Created theme function `login_menu()`.
+* Created controller `CCUserControlPanel`.
+
+
+v0.2.02 (2012-03-15) 
+
+* Uppgraded `CMUser` with groups and group-membership for each user.
+
+
+v0.2.01 (2012-03-15) 
+
+* Added `CMUser` and `CCUser` to handle users. Created code for testing login and logout of user.
+* Added inteface convenience methods `RedirectToController` and `RedirectToControllerMethod` in `CObject`.
+
+
 v0.1.9 (2012-03-13) 
 
 * Added `CMGuestbook` as a model for the sample guestbook application.
