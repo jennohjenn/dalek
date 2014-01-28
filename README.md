@@ -6,6 +6,8 @@ Detta ramverk är skapat av Erika Gidlund, jennelie.1981@gmail.com, och är slut
 Installation
 ------------
 
+* För att kunna installera Dalek behöver du klona ramverket från Github med foljande kommando <pre>git clone git://github.com/jennhojenn.git</pre>. Du behöver även Git Bash eller Git GUI på din dator för att själva kloningen skall gå att genomföra. De kan laddas ner på följande länk: http://git-scm.com/downloads
+
 Ändra logo, webbplatsens titel, footer och navigeringsmeny
 ----------------------------------------------------------
 
