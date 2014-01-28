@@ -8,11 +8,25 @@ Installation
 
 För att installera Dalek kan du göra enligt följande:
 
-* Du kan klona ramverket från Github med foljande kommando <pre>git clone git://github.com/jennhojenn.git</pre>. Du behöver även Git Bash eller Git GUI på din dator för att själva kloningen skall gå att genomföra. De kan laddas ner på följande länk: http://git-scm.com/downloads
 
-eller
+Ladda ner ramverket från git hub: https://github.com/jennohjenn/dalek. Eller klona med kommandot: git clone git://github.com/jennohjenn/dalek.git from your terminal.
 
-* Ladda ner zip-filen <a href="https://github.com/jennohjenn/dalek/archive/master.zip">https://github.com/jennohjenn/dalek/archive/master.zip</a>
+Ladda upp ramverket där du vill ha det på webservern. I ditt FTP-program på din webserver, högerklickar du på mappen <pre>site/data</pre> mappen och skriver in <pre>777</pre> på filrättigheter, för att den ska vara skrivbar. I terminalen skriver du: cd dalek; chmod -R 777 site/data för att uppnå samma sak.
+
+    Uncomment row #RewriteBase /Zelda/ to RewriteBase /Zelda/ in file .htaccess, if needed.
+
+    <IfModule mod_rewrite.c>
+     RewriteEngine on
+     #RewriteBase /Zelda/
+     RewriteCond %{REQUEST_FILENAME} !-f
+     RewriteCond %{REQUEST_FILENAME} !-d
+     RewriteRule (.*) index.php/$1 [NC,L]
+    </IfModule>
+
+    Open website in a browser, log in with root/root and install modules. Modules are setup with this link (from within Zelda): modules/install. Predefined user root/root is created.
+
+
+
 
 Ändra logo, webbplatsens titel, footer och navigeringsmeny
 ----------------------------------------------------------
