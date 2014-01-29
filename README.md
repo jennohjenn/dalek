@@ -8,7 +8,7 @@ Specifikation
 
 PHP, minst version 5.2.4<br />
 SQLite<br />
-Skrivbar katalog site/data (chmod 777)<br />
+Skrivbar mapp site/data (chmod 777)<br />
 
 Installation
 ------------
