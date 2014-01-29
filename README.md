@@ -15,7 +15,7 @@ För att installera Dalek kan du göra enligt följande:
 
 * För att använda ramverket på studentservern behöver du i filen <b>.htaccess</b> ändra raden <pre>RewriteBase /~ergi13/phpmvc/dalek</pre> till din användare och valda mapp för att det skall fungera. 
 
-När du laddat upp ramverket på studentservern öppnar du den i din browser och klickar på <pre>module/install</pre>. Då initieras databasen och användarna <pre>admin</pre> och <pre>doe</pre> skapas.
+När du laddat upp ramverket på studentservern öppnar du den i din browser och klickar på <b>module/install</b>. Då initieras databasen och användarna <pre>admin</pre> och <pre>doe</pre> skapas.
 
 Ramverket är nu installerat.
 
