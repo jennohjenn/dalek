@@ -9,23 +9,15 @@ Installation
 För att installera Dalek kan du göra enligt följande:
 
 
-Ladda ner ramverket från git hub: <a href="https://github.com/jennohjenn/dalek" target="_blank">https://github.com/jennohjenn/dalek</a>. Eller klona med kommandot: <pre>git clone git://github.com/jennohjenn/dalek.git</pre> from your terminal.
+* Ladda ner ramverket från git hub: <a href="https://github.com/jennohjenn/dalek" target="_blank">https://github.com/jennohjenn/dalek</a>. Eller klona med kommandot: <pre>git clone git://github.com/jennohjenn/dalek.git</pre> i Git Bash.
 
-Ladda upp ramverket där du vill ha det på webservern. I ditt FTP-program på din webserver, högerklickar du på mappen <b>site/data</b> och skriver in <b>777</b> på filrättigheter, för att den ska vara skrivbar. I terminalen skriver du: <pre>cd dalek; chmod -R 777 site/data</pre> för att uppnå samma sak.
+* Ladda upp ramverket där du vill ha det på studentservern. Använder du FTP-program för att ladda upp filer, så högerklickar du på mappen <b>site/data</b> och skriver in <b>777</b> på filrättigheter, för att den ska vara skrivbar. I terminalen skriver du: <pre>cd dalek; chmod -R 777 site/data</pre> för att uppnå samma sak.
 
-    Uncomment row #RewriteBase /Zelda/ to RewriteBase /Zelda/ in file .htaccess, if needed.
+* För att använda ramverket på studentservern behöver du i filen <b>.htaccess</b> ändra raden <pre>RewriteBase /~ergi13/phpmvc/dalek</pre> till din användare och valda mapp för att det skall fungera. 
 
-    <IfModule mod_rewrite.c>
-     RewriteEngine on
-     #RewriteBase /Zelda/
-     RewriteCond %{REQUEST_FILENAME} !-f
-     RewriteCond %{REQUEST_FILENAME} !-d
-     RewriteRule (.*) index.php/$1 [NC,L]
-    </IfModule>
+När du laddat upp ramverket på studentservern öppnar du den i din browser och klickar på <pre>module/install</pre>. Då initieras databasen och användarna <pre>admin</pre> och <pre>doe</pre> skapas.
 
-    Open website in a browser, log in with root/root and install modules. Modules are setup with this link (from within Zelda): modules/install. Predefined user root/root is created.
-
-
+Ramverket är nu installerat.
 
 
 Ändra logo, webbplatsens titel, footer och navigeringsmeny
