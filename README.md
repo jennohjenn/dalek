@@ -6,9 +6,9 @@ Detta ramverk är skapat av Erika Gidlund, jennelie.1981@gmail.com, och är slut
 Specifikation
 -------------
 
-PHP, minst version 5.2.4
-SQLite
-Skrivbar katalog site/data (chmod 777)
+PHP, minst version 5.2.4<br />
+SQLite<br />
+Skrivbar katalog site/data (chmod 777)<br />
 
 Installation
 ------------
