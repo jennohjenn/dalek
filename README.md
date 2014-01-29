@@ -30,8 +30,8 @@ Ramverket är nu installerat.
 ----------------------------------------------------------
 
 På <b>rad 173</b> i <b>site/config.php</b> hittar du vad som behövs för att ändra logo, titel och footer.
-Bildfilen för en ny logo placeras i <b>themes/core</b>.
-På <b>rad rad 130</b> i samma fil det som behövs för att uppdatera navigeringsmenyn. Se vidare nedan hur man lägger till en ny sida.
+Bildfilen för en ny logo placeras i <b>site/themes/mytheme</b>.
+På <b>rad 130</b> i samma fil det som behövs för att uppdatera navigeringsmenyn. Se vidare nedan hur man lägger till en ny sida.
 
 Skapa sida/blogg
 ----------------
