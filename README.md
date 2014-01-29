@@ -23,6 +23,21 @@ Ramverket är nu installerat.
 Ändra logo, webbplatsens titel, footer och navigeringsmeny
 ----------------------------------------------------------
 
+I <b>site/config.php</b> hittar du vad som behövs för att ändra ovanstående. 
+
+<pre>
+  'menu_to_region' => array('my-navbar'=>'navbar'),
+  'data' => array(
+    'header' => 'Dalek',
+    'slogan' => 'A PHP-based MVC-inspired CMF',
+    'favicon' => 'logo_80x80.png',
+    'logo' => 'logo_80x80.png',
+    'logo_width' => 80,
+    'logo_height' => 80,
+    'footer' => '<p>Dalek &copy; by Erika Gidlund (jennelie.1981@gmail.com)</p>',
+</pre>
+
+
 Skapa sida/blogg
 ----------------
 
