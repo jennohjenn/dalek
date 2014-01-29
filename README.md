@@ -26,7 +26,7 @@ Ramverket är nu installerat.
 Skapa sida/blogg
 ----------------
 
-Till höger under <b>Controllers and methods</b> finner du <b>content</b>. Om du klickar på den kommer du till översikten av sidans, av databasen, redan skapat innehåll. Här kan du ändra/uppdatera innehåll och skapa nytt. 
+Till höger under <b>Controllers and methods</b> finner du <b>content</b>. Om du klickar på den kommer du till översikten av sidans, av databasen redan skapat, innehåll. Här kan du ändra/uppdatera innehåll och skapa nytt. 
 
 Du kan skapa en <b>sida</b> eller en <b>bloggpost</b>. Detta fyller du i under <b>Type:</b> <b>Key:</b> fyller du i vad som kommer bli del av sökvägen.
 
