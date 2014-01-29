@@ -28,7 +28,7 @@ Skapa sida/blogg
 
 När du är inloggad ser startsidan annorlunda ut och till höger under <b>Controllers and methods</b> finner du <b>content</b>. Om du klickar på den kommer du till översikten av sidans, i databasen, redan skapat innehåll. Här kan du ändra/uppdatera innehåll och skapa nytt. 
 
-Du kan skapa en <b>sida</b> eller en <b>bloggpost</b>. Detta fyller du i under <b>Type:</b> <b>Key:</b> fyller dy i vad som kommer bli del av sökvägen.
+Du kan skapa en <b>sida</b> eller en <b>bloggpost</b>. Detta fyller du i under <b>Type:</b> <b>Key:</b> fyller du i vad som kommer bli del av sökvägen.
 
 Bloggposten hamnar av sig själv under länken My Blog i navigeringen, men om du skapar en ny sida så behöver du öppna <b>site/config.php</b> och under <b>my-navbar</b> lägger till namnet på nya sidan. T ex, <pre>'newpage' => array('label'=>'NewPage', 'url'=>'my/newpage'),</p>.
 
