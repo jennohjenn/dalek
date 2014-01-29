@@ -30,6 +30,6 @@ Till höger under <b>Controllers and methods</b> finner du <b>content</b>. Om du
 
 Du kan skapa en <b>sida</b> eller en <b>bloggpost</b>. Detta fyller du i under <b>Type:</b> <b>Key:</b> fyller du i vad som kommer bli del av sökvägen.
 
-Bloggposten hamnar av sig själv under länken My Blog i navigeringen, men om du skapar en ny sida så behöver du öppna <b>site/config.php</b> och under <b>my-navbar</b> lägger till namnet på nya sidan. T ex, <pre>'newpage' => array('label'=>'NewPage', 'url'=>'my/newpage'),</p>.
+Bloggposten hamnar av sig själv under länken My Blog i navigeringen, men om du skapar en ny sida så behöver du öppna <b>site/config.php</b> och under <b>my-navbar</b> lägger till namnet på nya sidan. T ex, <pre>'newpage' => array('label'=>'NewPage', 'url'=>'my/newpage'),</pre>
 
 
