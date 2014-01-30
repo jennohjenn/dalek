@@ -42,9 +42,9 @@ Bildfilen för en ny logo placeras i <b>site/themes/mytheme</b>.
 182: 'footer' => 'Dalek &copy; by Erika Gidlund (jennelie.1981@gmail.com)',< br/>
 </pre>
 
-Se till att <b>p-taggarna</b> ligger kvar på <b>footer</b> av designskäl.
+Se till att <b>p-taggarna</b> ligger kvar på <b>footer</b> av designskäl. Syns ej här, bara i koden.
 
-För instruktioner om hur man lägger till en nyskapad sida i navigeringsmenyn se nedan.
+<i>För instruktioner om hur man lägger till en nyskapad sida i navigeringsmenyn se nedan.</i>
 
 Skapa sida/blogg
 ----------------
