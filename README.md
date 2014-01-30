@@ -42,7 +42,7 @@ Bildfilen för en ny logo placeras i <b>site/themes/mytheme</b>.
 182: 'footer' => 'Dalek &copy; by Erika Gidlund (jennelie.1981@gmail.com)',< br/>
 </pre>
 
-Se till att <b>p-taggarna</p> ligger kvar på <b>footer</b> av designskäl.
+Se till att <b>p-taggarna</b> ligger kvar på <b>footer</b> av designskäl.
 
 För instruktioner om hur man lägger till en nyskapad sida i navigeringsmenyn se nedan.
 
@@ -55,6 +55,6 @@ Du kan skapa en <b>sida</b> (page) eller en <b>bloggpost</b> (post). Detta fylle
 
 Om du väljer att skapa en ny sida fyller du t ex <b>newpage</b> under <b>Key</b>. Detta är vad som kommer bli en del av sökvägen senare <b>'newpage'</b> i arrayen som ges som exempel nedan.
 
-Bloggposten hamnar av sig själv under länken My Blog i navigeringen, men om du skapar en ny sida så behöver du öppna <b>site/config.php</b> och under <b>my-navbar</b> på <b>rad 130</b> lägga till en rad med länkinformationen. T ex, <pre>'newpage' => array('label'=>'NewPage', 'url'=>'page/view/9'),</pre> <b>page/view/9</b> ändrar man till det aktuella id:et till sidan man skapad. Vilket id som hör till vad finner man under <b>content</b> som tidigare talats om.
+Bloggposten hamnar av sig själv under länken My Blog i navigeringen, men om du skapar en ny sida så behöver du öppna <b>site/config.php</b> och under <b>my-navbar</b> på <b>rad 130</b> och nedan lägga till en rad med länkinformationen. T ex, <pre>'newpage' => array('label'=>'NewPage', 'url'=>'page/view/9'),</pre> <b>page/view/9</b> ändrar man till det aktuella id:et till sidan man skapad. Vilket id som hör till vad finner man under <b>content</b> som tidigare talats om.
 
 
