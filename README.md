@@ -41,7 +41,7 @@ Till höger under <b>Controllers and methods</b> finner du <b>content</b>. Om du
 
 Du kan skapa en <b>sida</b> (page) eller en <b>bloggpost</b> (post). Detta fyller du i under <b>Type</b>.  
 
-Om du väljer att skapa en ny sida fyller du t ex <b>newpage</b> under <b>Key</b>. Detta är vad som kommer bli en del av sökvägen senare <b>my/newpage</b>.
+Om du väljer att skapa en ny sida fyller du t ex <b>newpage</b> under <b>Key</b>. Detta är vad som kommer bli en del av sökvägen senare <b>'newpage'</b> i arrayen som ges som exempel nedan.
 
 Bloggposten hamnar av sig själv under länken My Blog i navigeringen, men om du skapar en ny sida så behöver du öppna <b>site/config.php</b> och under <b>my-navbar</b> på <b>rad 130</b> lägga till en rad med länkinformationen. T ex, <pre>'newpage' => array('label'=>'NewPage', 'url'=>'page/view/9'),</pre> <b>page/view/9</b> ändrar man till det aktuella id:et till sidan man skapad. Vilket id som hör till vad finner man under <b>content</b> som tidigare talats om.
 
