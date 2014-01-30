@@ -33,14 +33,16 @@ På <b>rad 176-182</b> i <b>site/config.php</b> hittar du vad som behövs för a
 Bildfilen för en ny logo placeras i <b>site/themes/mytheme</b>.
 
 <pre>
-    'header' => 'Dalek',< br/>
-    'slogan' => 'A PHP-based MVC-inspired CMF',< br/>
-    'favicon' => 'logo_80x80.png',< br/>
-    'logo' => 'logo_80x80.png',< br/>
-    'logo_width' => 80,< br/>
-    'logo_height' => 80,< br/>
-    'footer' => '<p>Dalek &copy; by Erika Gidlund (jennelie.1981@gmail.com)</p>',< br/>
+176: 'header' => 'Dalek',< br/>
+177: 'slogan' => 'A PHP-based MVC-inspired CMF',< br/>
+178: 'favicon' => 'logo_80x80.png',< br/>
+179: 'logo' => 'logo_80x80.png',< br/>
+180: 'logo_width' => 80,< br/>
+181: 'logo_height' => 80,< br/>
+182: 'footer' => 'Dalek &copy; by Erika Gidlund (jennelie.1981@gmail.com)',< br/>
 </pre>
+
+Se till att <b>p-taggarna</p> ligger kvar på <b>footer</b> av designskäl.
 
 För instruktioner om hur man lägger till en nyskapad sida i navigeringsmenyn se nedan.
 
