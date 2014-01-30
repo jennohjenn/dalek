@@ -29,8 +29,18 @@ Ramverket är nu installerat.
 Ändra logo, webbplatsens titel, footer och navigeringsmeny
 ----------------------------------------------------------
 
-På <b>rad 173</b> i <b>site/config.php</b> hittar du vad som behövs för att ändra logo, titel och footer.
+På <b>rad 176-182</b> i <b>site/config.php</b> hittar du vad som behövs för att ändra logo, titel och footer.
 Bildfilen för en ny logo placeras i <b>site/themes/mytheme</b>.
+
+<pre>
+    'header' => 'Dalek',< br/>
+    'slogan' => 'A PHP-based MVC-inspired CMF',< br/>
+    'favicon' => 'logo_80x80.png',< br/>
+    'logo' => 'logo_80x80.png',< br/>
+    'logo_width' => 80,< br/>
+    'logo_height' => 80,< br/>
+    'footer' => '<p>Dalek &copy; by Erika Gidlund (jennelie.1981@gmail.com)</p>',< br/>
+</pre>
 
 För instruktioner om hur man lägger till en nyskapad sida i navigeringsmenyn se nedan.
 
